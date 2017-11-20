@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', type='text/css', href='../css/fonts/fonts.css')
+		link(rel="stylesheet" type="text/css" href="../css/style.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		title Library App
+	body
+		.navbar
+			
+			.dropdown
+				button.dropbtn
+					| Users
+				.dropdown-content
+					a(href='/signup') Sign Up
+					a(href='/login') Login
+					a(href='/logout') Logout
+					a(href='/profile') Profile
+			a(href='/books') Library
+			a(href='/addbook') Add Book
+			a(href='/about') About
+			a(href='/') Home
+
+	block content

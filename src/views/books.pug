@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 All Books
+    br
+    .box
+      each book in booksList
+        h3= book.dataValues.bookTitle
+        p= book.dataValues.author.name
+        a(href='/books/'+book.id) more
+        br
+        br

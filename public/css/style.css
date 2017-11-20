@@ -1,0 +1,306 @@
+/*font-family: 'Messages';
+font-family: 'Baby blocks';
+font-family: 'Ancient';
+font-family: 'Royal Acid';
+font-family: 'Luna';
+font-family: 'CaslonCP';
+font-family: 'Bebas Kai';*/
+
+
+/* ---------- UNIVERSAL STYLES ---------- */
+html {
+    font-size: 20px;
+}
+
+* {
+    color: black;
+    text-align: center;
+    font-family: 'Bebas Kai';
+}
+
+h1 {
+    font-family: 'CaslonCP';
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Bebas Kai';
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Bebas Kai';
+    font-size: 20px;
+    text-decoration: underline;
+    /*display: inline-block;*/
+
+}
+
+h4 {
+    font-family: 'Bebas Kai';
+    font-size: 20px;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+h5 {
+    font-family: 'Bebas Kai';
+    font-size: 25px;
+    background-color: #e8e230;
+    display: inline-block;
+}
+
+h6 {
+    font-family: 'CaslonCP';
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+a {
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: #e8e230;
+}
+
+/* ---------- NEW NAV BAR ---------- */
+
+.navbar {
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.navbar a {
+    float: right;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #e8e230;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* ---------- HOME PAGE - SLIDESHOW ---------- */
+
+.mySlides {
+    display: none;
+}
+
+.slidecontainer {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ---------- LIBRARY PAGE ---------- */
+
+.box {
+    background-color: white;
+    z-index: -1;
+    border: 2px solid #D3D3D3;
+    width: 60%;
+    height: 350px;
+    overflow: scroll;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    z-index: 1;
+
+}
+
+
+/* ---------- BOOK ID PAGE ---------- */
+
+#bookslide {
+    width: 90%;
+}
+
+
+/* ---------- ADD BOOK PAGE - FORM ---------- */
+
+.image-container {
+    overflow: hidden;
+    max-width: 80%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.images .image-container {
+    display: inline-block;
+    width: 49%;
+}
+
+
+
+form {
+    font-family: 'Bebas Kai';
+    padding-bottom: 10px;
+    display: block;
+}
+
+
+input {
+    font-family: 'Bebas Kai';
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 15px;
+    width: 40%;
+    letter-spacing: 1px;
+}
+
+button {
+    font-family: 'Bebas Kai';
+    border: 1px solid #000000;
+    font-size: 15px;
+    background-color: #D3D3D3;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background-color: #e8e230;
+    color: black;
+}
+
+
+
+
+/* ---------- PROFILE PAGE ---------- */
+
+.profile-container {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container img {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.profile .profile-container {
+    display: inline-block;
+    width: 49%;
+}
+
+#thumbsup {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* ---------- LOGIN PAGE ---------- */
+
+.loginform {
+    padding: 20px;
+}
+
+
+#submit {
+    font-family: 'Bebas Kai';
+    border: 1px solid #000000;
+    font-size: 15px;
+    background-color: #D3D3D3;
+    padding: 10px;
+    letter-spacing: 3px;
+    width: 20%;
+    height: auto;
+}
+
+#submit:hover {
+    background-color: #e8e230;
+    color: black;
+}
+
+
+#shame {
+    width: 60%;
+    height: auto;
+}
+
+#cat {
+    width: 60%;
+    height: auto;
+}
+
+

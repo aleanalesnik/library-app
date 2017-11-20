@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Add Book
+  br
+  .profile
+    .profile-container
+      img(src='/images/book.gif', alt='Book')
+    .profile-container
+      form.col.s12(action='/addBook', method='POST', autocomplete='off' id='form')
+        h4 book title
+        input(type='text', name='bookTitle' placeholder='Book Title')
+        h4 author name
+        input(type='text', name='authorName' placeholder='Author\'s First and Last Name')
+        br
+        br
+        button.btn.btn-default(type="submit", name="submit") Submit 

@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	h1 Login
+	if user
+		a(href='/profile') view profile
+		br
+		a(href='/logout') log out
+	else
+		.loginform
+			form#loginform(action='/login' method='post' autocomplete='off')
+				label email
+				br
+				input#email(name='email' required)
+				br
+				br
+				label password
+				br
+				input#password(name='password' type='password' required)
+				br
+				br
+				input(type='submit' value='login' id='submit')
+				br
+		h2#error-message= message

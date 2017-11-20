@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	if user
+		h1 Success!
+		br
+		.profile
+			.profile-container
+				img(src='/images/thumbsup.gif', alt='NPH', id='thumbsup')
+				br
+				br
+			.profile-container
+				h5 You are now logged in.
+				p Username: #{user.username} 
+				p Email: #{user.email}
+				a(href='/logout') log out
+	else
+		h1 Oops!
+		h2 You are not logged in yet!
+		img(src='/images/shame.gif', alt='shame', id='shame')
+		br
+		a(href='/login') Login Here
+		br
+		a(href='/signup') Not a user? Sign Up here!
+		br
